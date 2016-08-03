@@ -7,7 +7,7 @@ function onOpen()
   var range = sheet.getRange("B8:DC120");
   range.clear();
   
-  // set the next destination range to be where your first cell number will be copied too
+  // set the next destination range to be where your first cell number will be copied to
   var nextDestinationRange = 8;
   
   function copyToMaster(nextDestinationRange, sourceSheetNumber)
