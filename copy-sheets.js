@@ -1,12 +1,13 @@
 function onOpen()
 {
 
-  // clear the cells you are copying too
+  // clear the cells you are copying to
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheets()[0];
   var range = sheet.getRange("B8:DC120");
   range.clear();
   
+  // set the next destination range to be where your first cell number will be copied too
   var nextDestinationRange = 8;
   
   function copyToMaster(nextDestinationRange, sourceSheetNumber)
